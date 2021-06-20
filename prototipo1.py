@@ -72,3 +72,12 @@ def DibujarTablero (tablero):
                 print(' %s ' %a, end = '')
             c+=1
         print('')
+        def TiroValido (secuencia):
+    for s in secuencia:
+        if s<=7&s>0:
+            q=1
+        else:
+            q=0
+    return q
+
+tablero = []
