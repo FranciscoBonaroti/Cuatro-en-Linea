@@ -45,3 +45,30 @@ def CompletarTableroOrden (secuencia, tablero):
             soltarFichaEnColumna(2, a, tablero)
         t+=1
     return tablero
+    secuencia_texto = input("Ingrese la secuencia de numeros:")
+secuencia=[]
+for items in secuencia_texto.split (','):
+    secuencia.append(int(items))
+
+def DibujarTablero (tablero):
+    for row in range(len(tablero)):
+        for cell in range(len(tablero[0])):
+            if cell == 0:
+                print(' | ',end = '')
+            if cell == 6:
+                print ('|',end = '')
+            else:
+                print(str(tablero[row][cell]) + ' ', end = '')
+        print('')
+    print(" + - - - - - - + ")
+    for x in tablero:
+        c=0
+        for a in x:
+            if(c % 7 == 0)or c == 0:
+                print("|")
+            if(a == 0):
+                print('   ', end = '')
+            else:
+                print(' %s ' %a, end = '')
+            c+=1
+        print('')
