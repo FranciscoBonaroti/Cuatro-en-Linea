@@ -81,3 +81,19 @@ def DibujarTablero (tablero):
     return q
 
 tablero = []
+if TiroValido (secuencia)==1:
+    tablero = (CompletarTableroOrden(secuencia, TableroVacio()))
+    DibujarTablero (tablero)
+    print (ContenidoFila (2, tablero))
+    print ('\n')
+    print ("Las filas son:")
+    print (Filardas(tablero))
+    print ('\n')
+    print ("Las columnas son:")
+    print (Columnardas(tablero))
+else:
+ print ("El rango ingresado no es valido")
+
+ 
+
+print (ContenidoColumna(5,tablero))
