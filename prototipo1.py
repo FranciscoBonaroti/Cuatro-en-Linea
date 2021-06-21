@@ -45,7 +45,7 @@ def CompletarTableroOrden (secuencia, tablero):
             soltarFichaEnColumna(2, a, tablero)
         t+=1
     return tablero
-    secuencia_texto = input("Ingrese la secuencia de numeros:")
+secuencia_texto = input("Ingrese la secuencia de numeros:")
 secuencia=[]
 for items in secuencia_texto.split (','):
     secuencia.append(int(items))
@@ -72,7 +72,7 @@ def DibujarTablero (tablero):
                 print(' %s ' %a, end = '')
             c+=1
         print('')
-        def TiroValido (secuencia):
+def TiroValido (secuencia):
     for s in secuencia:
         if s<=7&s>0:
             q=1
